@@ -1,0 +1,38 @@
+@import "Colors";
+.header{
+    height: 100px;
+    background-color: $bg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    
+    img{
+        height: 70%;
+    }
+
+    >div{
+
+        width: 100%;
+        margin-left: 4vmax;
+        // border: 2px solid red;
+
+        >a{
+            text-decoration: none;
+            color: $white;
+            font-size: 1.2rem;
+            margin: 2vmax;
+        }
+    }
+
+    svg{
+        font-size: 1.5rem;
+        color: $white;
+        cursor: pointer;
+
+        &:hover{
+            color: $gray;
+        }
+    }
+}
