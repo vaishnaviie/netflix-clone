@@ -1,8 +1,19 @@
 import React from 'react'
+import Row from './Row'
+import "./Home.scss"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <section className='home'>
+        <div className='banner'>
+
+        </div>
+
+        <Row title={"Upcoming"} />
+        <Row title={"Popular"} />
+        <Row title={"Now playing"} />
+        <Row title={"Top rated"} />
+    </section>
   )
 }
 

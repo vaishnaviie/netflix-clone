@@ -1,0 +1,30 @@
+@import "Colors";
+
+.banner{
+    height: 450px;
+    
+}
+.card{
+    width: 200px;
+    margin: 0.3rem;
+    cursor: pointer;
+    transition: transform 0.5s;
+
+    &:hover{
+        transform:translateY(-10px)
+    }
+}
+
+.row{
+    padding: 1rem;
+    background-color: $bg;
+    color: $white;
+    >h2{
+        font-weight: 300;
+        margin: 0.3rem;
+    }
+    >div{
+        display: flex;
+        overflow-x: auto;
+    }
+}
