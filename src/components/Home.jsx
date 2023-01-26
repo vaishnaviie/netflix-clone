@@ -75,7 +75,17 @@ const Home = () => {
 
   return (
     <section className='home'>
-    <div className='banner' >
+    <div className='banner'  style={{
+      backgroundImage:popularMovies[0]? `url(${`${imgUrl}${popularMovies[0].poster_path}`})`:"$bg:rgb(16,16,16)"
+    }} >
+
+    { popularMovies[0] && <h1>{popularMovies[0].original_title}</h1>}
+    {popularMovies[0] && <p>{popularMovies[0].overview}</p>}
+    
+      <div>
+        <button><BiPlay/> Play  </button>
+        <button>My List <AiOutlinePlus/> </button>
+      </div>      
 
     </div>
 
